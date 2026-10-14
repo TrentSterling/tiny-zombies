@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-14",
+  "candidateSha256": "c487bdb1aabeddb7c0ee6edcb2d059aabb2c32ea1be5cfa7a0c34717da3a4fc4",
+  "source": "Bounded Windows validation reported by local browser test task",
+  "isolatedDropletCells": [
+    37,
+    21
+  ],
+  "isolatedGoreCells": [
+    21,
+    9
+  ],
+  "particleBuffersByteIdentical": true,
+  "impactCountsIdentical": true,
+  "seededDeathFrames": [
+    6,
+    120
+  ],
+  "controlledEventLimitation": "Pair solving omitted; not full gameplay equivalence",
+  "ordinaryGameplayFrames": 598,
+  "pauseResumeRestart": "passed",
+  "gpuErrors": [],
+  "newWindowsFaults": false,
+  "hostedCurrentBuildVerified": false
+}

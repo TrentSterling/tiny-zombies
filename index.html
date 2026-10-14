@@ -1343,7 +1343,7 @@ const integrateShader=COMMON+`
  if(abs(p.x)>95.8){p.x=clamp(p.x,-95.8,95.8);q.v.x*=-.3;}if(abs(p.z)>95.8){p.z=clamp(p.z,-95.8,95.8);q.v.z*=-.3;}
  let bloody=q.c.w<1.5&&q.c.x>q.c.y*1.5;
  if(bloody && wallID>0u){atomicMax(&WallPaint[wallID-1u],(u32(S.aux.x*16.0)<<8u)|220u);if(q.c.w<.5){q.p.w=0.0;}}
- if(grounded&&bloody&&(q.a.w<0.0||(q.a.x-q.a.w>.12&&length(q.v.xz)>.9))){let radius=select(2,3,q.c.w<.5);stain(p.xz,radius,select(180u,255u,q.c.w<.5));if(q.a.w<0.0){atomicAdd(&C[13],1u);}q.a.w=q.a.x;if(q.c.w<.5){q.p.w=min(q.p.w,.22);q.v=vec4f(q.v.xyz*.25,q.v.w);}}
+ if(grounded&&bloody&&(q.a.w<0.0||(q.a.x-q.a.w>.12&&length(q.v.xz)>.9))){let radius=select(1,2,q.c.w<.5);stain(p.xz,radius,select(180u,255u,q.c.w<.5));if(q.a.w<0.0){atomicAdd(&C[13],1u);}q.a.w=q.a.x;if(q.c.w<.5){q.p.w=min(q.p.w,.22);q.v=vec4f(q.v.xyz*.25,q.v.w);}}
  if(grounded&&q.a.x>1.1&&length(q.v.xyz)<.9){q.v=vec4f(0,0,0,q.v.w);}
  q.p=vec4f(p,q.p.w);B[i]=q;
 }

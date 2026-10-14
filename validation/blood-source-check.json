@@ -1,0 +1,63 @@
+{
+  "baseline_sha256": "1be63cbf1a3887251b0b26067133e71068f7c820c96f5f1c28a9b8718c72f6df",
+  "candidate_sha256": "c487bdb1aabeddb7c0ee6edcb2d059aabb2c32ea1be5cfa7a0c34717da3a4fc4",
+  "candidate_bytes": 369046,
+  "changed_byte_count": 2,
+  "javascript_syntax": "passed",
+  "shader_modules": 40,
+  "changed_shader_modules": [
+    "integrate"
+  ],
+  "only_exact_radius_substitution": true,
+  "unchanged": [
+    "particle emission and counts",
+    "flying particle sizes, velocities, lifetimes and colors",
+    "grounding and stamp cadence",
+    "floor blood intensity inputs and shading",
+    "wall blood and drips",
+    "persistent paint storage and timestamps",
+    "gameplay and budgets",
+    "scratch crash repair",
+    "rendering"
+  ],
+  "isolated_stamp_footprints": {
+    "gore": {
+      "before": {
+        "radius_cells": 2,
+        "painted_cells": 21,
+        "area_m2": 0.328125,
+        "bounding_width_m": 0.625
+      },
+      "after": {
+        "radius_cells": 1,
+        "painted_cells": 9,
+        "area_m2": 0.140625,
+        "bounding_width_m": 0.375
+      },
+      "reduction_percent": 57.14285714285714
+    },
+    "droplet": {
+      "before": {
+        "radius_cells": 3,
+        "painted_cells": 37,
+        "area_m2": 0.578125,
+        "bounding_width_m": 0.875
+      },
+      "after": {
+        "radius_cells": 2,
+        "painted_cells": 21,
+        "area_m2": 0.328125,
+        "bounding_width_m": 0.625
+      },
+      "reduction_percent": 43.24324324324324
+    }
+  },
+  "gpu_compilation": "not run",
+  "gpu_execution": "not run",
+  "visual_validation": "pending Windows paired capture",
+  "caveats": [
+    "Areas describe individual non-overlapping paint stamps on an infinite floor. Overlap and world boundaries change combined coverage.",
+    "Paint edge falloff remains the same function, scaled by the reduced radius.",
+    "Persistent marks can still accumulate into a carpet during long play. No cap, fading, alpha, frequency, or cleanup change is included."
+  ]
+}
