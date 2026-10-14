@@ -1,0 +1,54 @@
+{
+  "purpose": "Diagnostic candidate; no GPU execution or confirmed crash fix claimed",
+  "original": {
+    "file": "tiny_zombies_v9.html",
+    "sha256": "787cdb9b13b91e27313e550826580e4030ce314fb571299ec171ddf051f99349",
+    "preserved": true
+  },
+  "candidate": {
+    "file": "v9-scratch-candidate.html",
+    "sha256": "1be63cbf1a3887251b0b26067133e71068f7c820c96f5f1c28a9b8718c72f6df",
+    "bytes": 369046
+  },
+  "exact_replacement_counts": {
+    "magazine_scalar_parameter": 1,
+    "reload_scalar_parameter": 1,
+    "magazine_scalar_call_sites": 3,
+    "reload_scalar_call_site": 1,
+    "fracture_workgroup_scratch": 1,
+    "goap_workgroup_scratch": 1,
+    "astar_workgroup_scratch": 1,
+    "remove_astar_local_nodes": 1,
+    "remove_astar_local_reverse": 1
+  },
+  "javascript_syntax": "passed",
+  "structural_checks": {
+    "shader_modules_extracted": 40,
+    "single_invocation_kernels": true,
+    "workgroup_array_declarations": 8,
+    "private_scratch_duplicates": 0,
+    "state_valued_helper_parameters": 0,
+    "renderer_unchanged_except_unused_scalar_helpers": true
+  },
+  "source_layout_bytes": {
+    "State": 8880,
+    "Buddy7": 512,
+    "Wreck8": 336,
+    "Node7": 32
+  },
+  "workgroup_scratch_bytes": {
+    "fracture8": 4096,
+    "buddy": 2048,
+    "squadNav7": 9216
+  },
+  "workgroup_baseline_limit_bytes": 16384,
+  "bindings_changed": false,
+  "dispatches_changed": false,
+  "gpu_compilation": "not run by this script",
+  "gpu_execution": "not run by this script",
+  "caveats": [
+    "Memory sizes are WGSL source layouts, not measured NVIDIA compiler spills.",
+    "Scratch equivalence relies on workgroup_size(1); larger groups need ownership and synchronization changes.",
+    "GOAP resets every scratch element per call; fracture and A* read only entries initialized by that invocation."
+  ]
+}

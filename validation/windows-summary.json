@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "source": "Bounded Windows browser validation reported by the local test task",
+  "sha256": "1be63cbf1a3887251b0b26067133e71068f7c820c96f5f1c28a9b8718c72f6df",
+  "browser": "Chrome 155.0.8059.41",
+  "gpu": "NVIDIA RTX 5070 Ti",
+  "driver": "591.86",
+  "viewport": [
+    1280,
+    720
+  ],
+  "zombies": 2048,
+  "particles": 32768,
+  "activeSeconds": 60,
+  "activeFrames": 3600,
+  "approximateFPS": 60,
+  "medianReportedGpuMs": 3.87,
+  "rounds": 983,
+  "grenades": 2,
+  "checks": [
+    "movement",
+    "wall destruction and fracture",
+    "particles",
+    "pathfinding",
+    "pause/resume",
+    "restart restores health/ammunition/world"
+  ],
+  "gameErrors": [],
+  "deviceErrors": [],
+  "newWindowsGpuFaults": false,
+  "limitations": [
+    "10-second gate plus 50 seconds with inspection pause",
+    "Player downed; simulation continued",
+    "Hosted URL not yet validated",
+    "One hardware/browser/driver configuration"
+  ]
+}
