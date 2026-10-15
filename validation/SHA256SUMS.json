@@ -1,8 +1,8 @@
 {
   ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "README.md": "6e00595c33bf21823780041dab9e4e950467c8e977f72329c2d3ce5e58a58f61",
+  "README.md": "7b165e7345656157c14520eadf443bbbf5466e0d3e47e8fbba70b80832d75ea5",
   "assets/tiny-zombies-v9.png": "e7ea5b211d4b1fad1fbeac1ec843c0e44cf5170291d9aa9ee40222fa75a2d119",
-  "index.html": "c487bdb1aabeddb7c0ee6edcb2d059aabb2c32ea1be5cfa7a0c34717da3a4fc4",
+  "index.html": "3cde0e0b9288ec26de441fcda1bc78a6b9b98fa1fe53411b897c3d6fd23a1517",
   "tools/check_blood_radius.js": "598f56880e617a451c922cc5e0a4c2adbd73cbbbd3dc336ca26c98113adc171d",
   "tools/make_v9_scratch_candidate.py": "0a71328362c532976b5922efc37b4b219139d0d0c3a5ef71b5a69bd77d528415",
   "tools/reduce_floor_stamps.py": "db9b4930762cd5efc7398d35eb02fa9b1602bebc0ebb4b611d8eea427e12f11b",
