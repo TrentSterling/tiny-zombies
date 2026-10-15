@@ -1,3 +1,11 @@
+# Canonical game URL
+
+Play and follow ongoing development at [tront.xyz/tinyzombies/](https://tront.xyz/tinyzombies/) and [TrentSterling/tinyzombies](https://github.com/TrentSterling/tinyzombies). This repository preserves the earlier release history; its Pages entry redirects to the canonical game, retaining query parameters and URL fragments.
+
+The release notes below describe the archived V9 build at commit `657300207233510c9e233199db78c41cb141d990`.
+
+---
+
 # Tiny Zombies: No One Left
 
 A standalone WebGPU voxel zombie game. This is the 2026 V9 prototype, distinct from the 2015 Unity experiment.
